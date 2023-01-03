@@ -22,7 +22,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
               //resuable components
               LibraryAppBar(),
 
-              //
+              //Text of Library Screen
               Text(
                 'Library',
                 style: Theme.of(context).textTheme.bodyText1!.copyWith(
