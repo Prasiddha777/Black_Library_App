@@ -1,3 +1,4 @@
+import 'package:b_library/resources/components/app_bar.dart';
 import 'package:b_library/resources/constants/color.dart';
 import 'package:b_library/view/Screens/library_screen.dart';
 import 'package:flutter/material.dart';
@@ -15,9 +16,14 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> _buildScreen() {
     return [
       SafeArea(
-        child: Text(
-          'Home',
-          style: Theme.of(context).textTheme.subtitle1,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Column(
+            children: const [
+              //
+              LibraryAppBar()
+            ],
+          ),
         ),
       ),
       LibraryScreen(),
