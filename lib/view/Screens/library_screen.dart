@@ -3,6 +3,7 @@ import 'package:b_library/data/response/status.dart';
 import 'package:b_library/resources/components/app_bar.dart';
 import 'package:b_library/resources/constants/color.dart';
 import 'package:b_library/resources/constants/fonts.dart';
+import 'package:b_library/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_stars/flutter_rating_stars.dart';
 import 'package:provider/provider.dart';
@@ -83,7 +84,13 @@ class _LibraryScreenState extends State<LibraryScreen> {
                           itemBuilder: (context, index) {
                             return InkWell(
                               onTap: () {
-                                
+                                Utils.flushBarErrorMessages(
+                                    value.bookList.data!.data!.docs![index]
+                                        .publishedYear
+                                        .toString(),
+                                    context,
+                                    value.bookList.data!.data!.docs![index].name
+                                        .toString());
                               },
                               child: Container(
                                 child: Column(

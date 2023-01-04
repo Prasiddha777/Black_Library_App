@@ -38,6 +38,7 @@ dependencies:
   persistent_bottom_nav_bar: ^5.0.2
   http: ^0.13.5
   flutter_native_splash: ^2.2.16
+  another_flushbar: ^1.12.29
   provider: ^6.0.4
   flutter_rating_stars: ^1.0.3+4
 
