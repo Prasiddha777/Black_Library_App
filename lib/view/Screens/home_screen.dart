@@ -1,6 +1,8 @@
 import 'package:b_library/resources/components/app_bar.dart';
 import 'package:b_library/resources/constants/color.dart';
 import 'package:b_library/view/Screens/library_screen.dart';
+import 'package:b_library/view/Screens/search_screen.dart';
+import 'package:b_library/view/Screens/shop_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
@@ -26,10 +28,10 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      LibraryScreen(),
-      Text('Add'),
-      Text('Messages'),
-      Text('Proile'),
+      const LibraryScreen(),
+      const ShopScreen(),
+      const SearchScreen(),
+      const Text('Proile'),
     ];
   }
 
