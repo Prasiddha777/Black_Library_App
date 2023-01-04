@@ -1,5 +1,6 @@
 import 'package:b_library/controller/services/splash_services.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 //for custom Splash Screen🐱‍🏍
 class SplashScreen extends StatefulWidget {
@@ -20,8 +21,12 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.amber,
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Lottie.network(
+            'https://assets1.lottiefiles.com/packages/lf20_dysweam7.json'),
+      ),
     );
   }
 }

@@ -84,7 +84,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      initialRoute: RouteName.homeScreen,
+      initialRoute: RouteName.splashScreen,
       onGenerateRoute: Routes.generateRoute,
     );
   }
